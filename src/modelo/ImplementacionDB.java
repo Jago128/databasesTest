@@ -12,7 +12,7 @@ public class ImplementacionDB {
 	private String userDB;
 	private String passwordDB;
 	
-	final String SQL="SELECT * FROM usuario WHERE usuario=? AND contraseña=?";
+	final String SQL="SELECT * FROM usuario WHERE nombre=? AND contraseña=?";
 
 	public ImplementacionDB() {
 		this.configFile=ResourceBundle.getBundle("configClase");

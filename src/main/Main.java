@@ -1,13 +1,21 @@
 package main;
 
-import modelo.ImplementacionDB;
+import modelo.*;
 import utilidades.Utilidades;
 
 public class Main {
 
 	public static void main(String[] args) {
 		int menu;
+		String name, password;
 		ImplementacionDB i=new ImplementacionDB();
+		System.out.println("Introduce el nombre:");
+		name=Utilidades.introducirCadena();
+		System.out.println("Introduce la contraseña:");
+		password=Utilidades.introducirCadena();
+		System.out.println(i.comprobarUsuario(new Usuario(name,password)));
+		
+		/*
 		do {
 			menu=menu();
 			switch (menu) {
@@ -31,7 +39,7 @@ public class Main {
 				System.out.println("Adios!");
 			}
 		} while (menu!=0);
-		
+		*/
 	}
 	
 	public static int menu() {
