@@ -15,7 +15,6 @@ public class Main {
 		password=Utilidades.introducirCadena();
 		System.out.println(i.comprobarUsuario(new Usuario(name,password)));
 		
-		/*
 		do {
 			menu=menu();
 			switch (menu) {
@@ -39,7 +38,6 @@ public class Main {
 				System.out.println("Adios!");
 			}
 		} while (menu!=0);
-		*/
 	}
 	
 	public static int menu() {
