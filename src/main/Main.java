@@ -15,7 +15,6 @@ public class Main {
 		name=Utilidades.introducirCadena();
 		System.out.println("Introduce la contraseña:");
 		password=Utilidades.introducirCadena();
-
 		if (i.comprobarUsuario(new Usuario(name,password))) {
 			do {
 				menu=menu();
@@ -43,7 +42,6 @@ public class Main {
 		} else {
 			System.out.println("Las credenciales introducidas son incorrectas.");
 		}
-
 	}
 
 	public static int menu() {
