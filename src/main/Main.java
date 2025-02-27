@@ -72,7 +72,7 @@ public class Main {
 		nom=Utilidades.introducirCadena();
 		System.out.println("Introduce la nueva contraseña:");
 		pass=Utilidades.introducirCadena();
-		if (i.update(nom, pass)) {
+		if (i.update(new Usuario(nom,pass))) {
 			System.out.println("El usuario ha sido actualizado correctamente.");
 		} else {
 			System.out.println("Error al actualizar el usuario.");

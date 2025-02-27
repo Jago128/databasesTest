@@ -80,13 +80,13 @@ public class ImplementacionDB {
 		return check;
 	}
 	
-	public boolean update(String nom, String pass) {
+	public boolean update(Usuario user) {
 		boolean check=false;
 		
 		try {
 			stmt=con.prepareStatement(UPDATEUSER);
-			stmt.setString(1, pass);
-			stmt.setString(2, nom);
+			stmt.setString(1, user.getContraseña());
+			stmt.setString(2, user.getNombre());
 			if (stmt.executeUpdate()>0) {
 				check=true;
 			}
