@@ -5,7 +5,7 @@ import java.util.*;
 import modelo.*;
 import utilidades.Utilidades;
 
-public class Main { 
+public class Main {
 
 	public static void main(String[] args) {
 		int menu;
